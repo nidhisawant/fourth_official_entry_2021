@@ -75,7 +75,7 @@ try
    scattTrain=[];
     for kk=[leads_idx]
             sct_feat1= featureMatrix(sf,data1(kk,:))';
-            sct_feat = feature_mean(sct_feat1);
+            sct_feat = mean(sct_feat1);
             scattTrain=[scattTrain; sct_feat];
     end
     
